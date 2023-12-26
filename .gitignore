@@ -160,3 +160,10 @@ cython_debug/
 #.idea/
 
 .DS_Store
+
+# Oversized files + models
+vgg19_gray.pth
+vgg19_conv.pth
+colornet_iter_76000.pth
+imagenet_step142124.ckpt
+mscoco_step259999.ckpt
