@@ -7,7 +7,7 @@ unicolor: A stable diffusion extension, it implements luckyhzt's [Unicolor Color
 
 <h3>
 
-[Features](/features) | [Installation](/install)
+[Features](#features) | [Installation](#installation)
 
 </h3>
 
