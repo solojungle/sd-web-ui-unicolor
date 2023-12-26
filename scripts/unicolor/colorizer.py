@@ -1,31 +1,23 @@
-import argparse
-import enum
+
 import importlib
-import io
-import json
 import os
 import sys
 
 import clip
 import cv2
-import kornia
-import matplotlib.pyplot as plt
 import nltk
 import numpy as np
-import skimage.color
 import torch
 import torch.nn.functional as F
-import torchvision
 import torchvision.transforms as T
 import yaml
-from image_warper import ImageWarper
-from matplotlib.widgets import Button
-from PIL import Image, ImageDraw, ImageOps
-from scipy import signal
-from tqdm import tqdm
-from utilities import (color_resize, get_input_range, get_mask_range,
-                       get_predict_range, get_sample_range, load_model,
-                       output_to_pil, preprocess, replace)
+from PIL import Image, ImageOps
+
+from scripts.unicolor.image_warper import ImageWarper
+from scripts.unicolor.utilities import (color_resize, get_input_range,
+                                        get_mask_range, get_predict_range,
+                                        get_sample_range, load_model,
+                                        output_to_pil, preprocess, replace)
 
 
 class Colorizer():
@@ -56,7 +48,7 @@ class Colorizer():
         # Load colorizer
         os.chdir(self.model_path)
         sys.path.append(self.model_path)
-        module = importlib.import_module('colorization')
+        module = importlib.import_module('scripts.unicolor.colorization')
         model = getattr(module, 'Colorization')
         self.transformer = load_model(model, self.ckpt_path, self.ckpt_file).to(self.device).eval().requires_grad_(False)
 

@@ -1,10 +1,7 @@
 import hashlib
 import os
-import shutil
-import sys
 
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
 import requests
 import torch
@@ -12,7 +9,7 @@ import torchvision.transforms as T
 import torchvision.utils as vutils
 import yaml
 from PIL import Image
-from skimage import color, io
+from skimage import color
 from torch.autograd import Variable
 from tqdm import tqdm
 

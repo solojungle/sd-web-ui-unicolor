@@ -1,8 +1,9 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from discriminator import NLayerDiscriminator, weights_init
-from lpips import LPIPS
+
+from scripts.unicolor.discriminator import NLayerDiscriminator, weights_init
+from scripts.unicolor.lpips import LPIPS
 
 
 class DummyLoss(nn.Module):

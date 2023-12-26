@@ -1,9 +1,10 @@
 import pytorch_lightning as pl
 import torch
 import torch.nn.functional as F
-from transformer import HybridTran
-from utilities import rgb_to_gray
-from vqgan import Chroma_VQGAN
+
+from scripts.unicolor.transformer import HybridTran
+from scripts.unicolor.utilities import rgb_to_gray
+from scripts.unicolor.vqgan import Chroma_VQGAN
 
 
 class Colorization(pl.LightningModule):

@@ -1,24 +1,22 @@
 from __future__ import print_function
 
 import argparse
-import glob
 import os
 import sys
-import time
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 
 import cv2
 import numpy as np
-import test_transforms as transforms
 import torch
 import torchvision.transforms as T
-from distortion import Normalize, RGB2Lab, ToTensor
-from frame_color import warp_color
-from non_local_net import VGG19_pytorch, WarpNet
 from PIL import Image
-from tqdm import tqdm
-from utilities import batch_lab2rgb_transpose_mc
+
+import scripts.unicolor.test_transforms as transforms
+from scripts.unicolor.distortion import Normalize, RGB2Lab, ToTensor
+from scripts.unicolor.frame_color import warp_color
+from scripts.unicolor.non_local_net import VGG19_pytorch, WarpNet
+from scripts.unicolor.utilities import batch_lab2rgb_transpose_mc
 
 
 class ImageWarper():

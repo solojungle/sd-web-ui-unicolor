@@ -4,10 +4,11 @@ import collections
 import numbers
 import random
 
-import functional as F
 import torch
 from PIL import Image
 from skimage import color
+
+import scripts.unicolor.functional as F
 
 __all__ = [
     "Compose",

@@ -1,6 +1,7 @@
 import torch
 from torch import nn
-from vqgan_model import VQModel
+
+from scripts.unicolor.vqgan_model import VQModel
 
 
 class Chroma_VQGAN(nn.Module):

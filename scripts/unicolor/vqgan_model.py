@@ -2,9 +2,10 @@ import kornia
 import pytorch_lightning as pl
 import torch
 import torch.nn.functional as F
-from module import Decoder, Encoder
-from quantize import VectorQuantizer
-from vqperceptual import VQLPIPSWithDiscriminator
+
+from scripts.unicolor.module import Decoder, Encoder
+from scripts.unicolor.quantize import VectorQuantizer
+from scripts.unicolor.vqperceptual import VQLPIPSWithDiscriminator
 
 
 class VQModel(pl.LightningModule):

@@ -1,8 +1,5 @@
 from __future__ import division
 
-import math
-import random
-
 import torch
 from PIL import Image, ImageEnhance, ImageOps
 
@@ -12,7 +9,6 @@ except ImportError:
     accimage = None
 import collections
 import numbers
-import types
 import warnings
 
 import numpy as np

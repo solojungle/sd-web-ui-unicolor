@@ -2,7 +2,6 @@ import math
 import random
 
 import cv2
-import functional as F
 import numpy as np
 from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
@@ -10,6 +9,8 @@ from skimage import color
 from skimage.draw import random_shapes
 from skimage.filters import gaussian
 from skimage.transform import resize
+
+import scripts.unicolor.functional as F
 
 cv2.setNumThreads(0)
 from numba import jit, u1, u2

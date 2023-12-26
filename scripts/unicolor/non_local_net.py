@@ -4,8 +4,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import models as torch_models
-from utilities import uncenter_l, vgg_preprocess
-from vgg19_gray import vgg19_gray
+
+from scripts.unicolor.utilities import uncenter_l, vgg_preprocess
+from scripts.unicolor.vgg19_gray import vgg19_gray
 
 
 def find_local_patch(x, patch_size):

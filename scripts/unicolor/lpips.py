@@ -5,7 +5,8 @@ from collections import namedtuple
 import torch
 import torch.nn as nn
 from torchvision import models
-from utilities import get_ckpt_path
+
+from scripts.unicolor.utilities import get_ckpt_path
 
 
 class LPIPS(nn.Module):
@@ -32,7 +33,7 @@ class LPIPS(nn.Module):
 
     @classmethod
     def from_pretrained(cls, name="vgg_lpips"):
-        if name is not "vgg_lpips":
+        if name != "vgg_lpips":
             raise NotImplementedError
         model = cls()
         ckpt = get_ckpt_path(name)
