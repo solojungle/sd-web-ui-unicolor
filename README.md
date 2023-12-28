@@ -41,3 +41,17 @@ Type descriptions and it will work
 
 Follow the guide on how to install extensions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions).
 
+### Models 
+
+https://huggingface.co/solojungle/sd-web-ui-unicolor-pretrained-models/tree/main
+
+Download the pretrained models (including both Chroma-VQGAN and Hybrid-Transformer) from Hugging Face:
+
+    Trained model with ImageNet - put the file imagenet_step142124.ckpt under folder framework/checkpoints/unicolor_imagenet.
+    Trained model with MSCOCO - put the file mscoco_step259999.ckpt under folder framework/checkpoints/unicolor_mscoco.
+
+To use exemplar-based colorization, download the pretrained models from Deep-Exemplar-based-Video-Colorization, unzip the file and place the files into the corresponding folders:
+
+    video_moredata_l1 under the sample/ImageMatch/checkpoints folder
+    vgg19_conv.pth and vgg19_gray.pth under the sample/ImageMatch/data folder
+    
