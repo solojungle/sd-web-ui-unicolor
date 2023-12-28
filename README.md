@@ -12,7 +12,7 @@ unicolor: A stable diffusion extension, it implements luckyhzt's [Unicolor Color
 </h3>
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/solojungle/sd-web-ui-unicolor)](https://github.com/solojungle/sd-web-ui-unicolor/stargazers)
-[![Discord](https://img.shields.io/twitter/follow/aliawari)](https://x.com/follow/aliawari)
+[![Discord](https://img.shields.io/twitter/follow/aliawarii)](https://x.com/follow/aliawarii)
 
 </div>
 
